@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp600"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:padding="@dimen/dp20"
+        android:text="请选择时间点"
+        android:textColor="@color/date_picker_text_light"
+        android:textSize="@dimen/font_24"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="@color/date_picker_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp20"
+        android:background="@color/date_picker_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.demo.datepickerdemo.datepicker.PickerView
+            android:id="@+id/dpv_year"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp160"
+            android:layout_weight="3" />
+
+        <TextView
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="年"
+            android:textColor="@color/date_picker_text_dark"
+            android:textSize="@dimen/font_24" />
+
+        <com.demo.datepickerdemo.datepicker.PickerView
+            android:id="@+id/dpv_month"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp160"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="月"
+            android:textColor="@color/date_picker_text_dark"
+            android:textSize="@dimen/font_24" />
+
+        <com.demo.datepickerdemo.datepicker.PickerView
+            android:id="@+id/dpv_day"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp160"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="@color/date_picker_text_dark"
+            android:textSize="@dimen/font_24" />
+
+        <com.demo.datepickerdemo.datepicker.PickerView
+            android:id="@+id/dpv_hour"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp160"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_hour_unit"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="时"
+            android:textColor="@color/date_picker_text_dark"
+            android:textSize="@dimen/font_24" />
+
+        <com.demo.datepickerdemo.datepicker.PickerView
+            android:id="@+id/dpv_minute"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="@dimen/dp160"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_minute_unit"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分"
+            android:textColor="@color/date_picker_text_dark"
+            android:textSize="@dimen/font_24" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="@color/date_picker_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp20"
+            android:text="取消"
+            android:textColor="@color/date_picker_text_light"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/dp2"
+            android:layout_height="match_parent"
+            android:background="@color/date_picker_divider" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/dp20"
+            android:text="确定"
+            android:textColor="@color/date_picker_text_light"
+            android:textSize="@dimen/font_24"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>
